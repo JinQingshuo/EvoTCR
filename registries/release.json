@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0",
+  "model": {
+    "repo_id": "Tony1233/EvoTCR-Refill212-MLP",
+    "revision": "92e3334da50457726c6e993e3e05daf4d93e1ce0"
+  },
+  "dataset": {
+    "repo_id": "Tony1233/EvoTCR-1000-Refill212",
+    "revision": "a123093ce66e6e9d0f5273d2563a3d70bec82691"
+  }
+}

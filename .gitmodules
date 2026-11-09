@@ -1,0 +1,3 @@
+[submodule "third_party/NetTCRfold-1.0"]
+	path = third_party/NetTCRfold-1.0
+	url = https://github.com/mnielLab/NetTCRfold-1.0

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "config": {
+    "id": 77,
+    "width": 8,
+    "depth": 3,
+    "activation": "silu",
+    "representation": "dual",
+    "input_temperature": 0.3494338766960809,
+    "lr": 0.0024343641723449353,
+    "weight_decay": 0.0005288674198648025,
+    "dropout": 0.1,
+    "residual_scale": 1.0,
+    "residual_penalty": 0.1,
+    "loss": "listwise",
+    "loss_temperature": 0.08453819903880515,
+    "beta1": 0.9,
+    "beta2": 0.999
+  },
+  "epoch": 60,
+  "mode": "softmax_sd_1",
+  "final_seeds": [
+    1109,
+    1110,
+    1111,
+    1112,
+    1113
+  ],
+  "primary_seed": 1109,
+  "hyperparameters_locked": true
+}

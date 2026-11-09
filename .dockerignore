@@ -1,0 +1,8 @@
+.git
+.venv
+weights
+data
+runs
+third_party/NetTCRfold-1.0
+__pycache__
+*.pyc

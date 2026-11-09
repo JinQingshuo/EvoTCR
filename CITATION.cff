@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software and the pinned data/model revisions, as well as AlphaFold 3 and NetTCRFold."
+title: "EvoTCR: factorized frozen TCR–pMHC inference"
+type: software
+version: 0.1.0
+date-released: 2026-11-09
+license: MIT
+repository-code: https://github.com/JinQingshuo/EvoTCR
+url: https://huggingface.co/Tony1233/EvoTCR-Refill212-MLP
+authors:
+  - name: "EvoTCR contributors"

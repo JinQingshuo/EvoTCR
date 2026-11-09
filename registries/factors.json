@@ -1,0 +1,138 @@
+[
+  {
+    "name": "contact_beta_max",
+    "version": "1.0.0",
+    "family": "confidence",
+    "definition": "TCRβ–肽最大接触概率；三种结构取最大值",
+    "dependencies": [],
+    "fitted": false
+  },
+  {
+    "name": "neg_pae_cdr3beta_bidir",
+    "version": "1.0.0",
+    "family": "confidence",
+    "definition": "CDR3β–肽双向平均PAE取负；三种结构取最大值",
+    "dependencies": [],
+    "fitted": false
+  },
+  {
+    "name": "plddt_peptide",
+    "version": "1.0.0",
+    "family": "confidence",
+    "definition": "首个固定seed的肽残基平均pLDDT",
+    "dependencies": [],
+    "fitted": false
+  },
+  {
+    "name": "R10_neg_pae_tcr_min",
+    "version": "1.0.0",
+    "family": "confidence",
+    "definition": "TCR–肽最小PAE取负，三seed最大值后同TCR十肽排名",
+    "dependencies": [],
+    "fitted": false
+  },
+  {
+    "name": "R10_contact_tcr_max",
+    "version": "1.0.0",
+    "family": "confidence",
+    "definition": "TCR–肽最大接触概率，三seed最大值后同TCR十肽排名",
+    "dependencies": [],
+    "fitted": false
+  },
+  {
+    "name": "R10_neg_pae_cdr3_min",
+    "version": "1.0.0",
+    "family": "confidence",
+    "definition": "CDR3–肽最小PAE取负，三seed最大值后同TCR十肽排名",
+    "dependencies": [],
+    "fitted": false
+  },
+  {
+    "name": "R10_iptm",
+    "version": "1.0.0",
+    "family": "confidence",
+    "definition": "首个固定seed的ipTM，同TCR十肽排名",
+    "dependencies": [],
+    "fitted": false
+  },
+  {
+    "name": "seq_cognate",
+    "version": "1.0.0",
+    "family": "sequence",
+    "definition": "配对CDR3固定距离→训练中位数校准RBF→cognate岭回归",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "seq_HLA",
+    "version": "1.0.0",
+    "family": "sequence",
+    "definition": "同HLA序列核，训练子集中心化标签→岭回归",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "seq_masked",
+    "version": "1.0.0",
+    "family": "sequence",
+    "definition": "观察掩码中心化的序列核岭回归",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "nearest_positive",
+    "version": "1.0.0",
+    "family": "sequence",
+    "definition": "距训练子集同靶点设计阳性的最小距离取负",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "nearest_negative",
+    "version": "1.0.0",
+    "family": "sequence",
+    "definition": "距训练子集同HLA其他靶点假定阴性的最小距离取负",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "structure_HLA",
+    "version": "1.0.0",
+    "family": "structure",
+    "definition": "6250维结构描述子→训练PCA→同HLA核岭回归",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "structure_cognate",
+    "version": "1.0.0",
+    "family": "structure",
+    "definition": "6250维结构描述子→训练PCA→cognate核岭回归",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "structure_hierarchy",
+    "version": "1.0.0",
+    "family": "structure",
+    "definition": "5320维组内中心化→训练PCA→全局与靶点残差分层回归",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "union_HLA",
+    "version": "1.0.0",
+    "family": "structure",
+    "definition": "F1+F3共5320维→训练PCA→同HLA核岭回归",
+    "dependencies": [],
+    "fitted": true
+  },
+  {
+    "name": "LJ_HLA",
+    "version": "1.0.0",
+    "family": "structure",
+    "definition": "F1+F3的lj/dmin列→训练PCA→同HLA核岭回归",
+    "dependencies": [],
+    "fitted": true
+  }
+]
